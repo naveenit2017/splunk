@@ -77,6 +77,14 @@ Splunk Installation | Data Ingestion:
 -------------------------------------
 ![image](https://github.com/user-attachments/assets/0c82773f-6a29-4453-b587-36f5faf3b9b0)
 
+wget -O splunk-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb "https://download.splunk.com/products/splunk/releases/9.0.3/linux/splunk-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb"
+mv splunk-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb /tmp
+cd /tmp
+sudo dpkg -i splunk-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb 
+sudo /opt/splunk/bin/splunk enable boot-start --accept-license --answer-yes
+sudo service splunk start
+
+
 
 
 
